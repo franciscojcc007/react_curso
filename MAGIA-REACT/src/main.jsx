@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import {App,Lista} from './App.jsx'
-// import Lista from './components/Lista.jsx'
+import './style.css'
+import {Presentation} from './components/Presentation.jsx'
+import {Lista} from './components/Lista.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Presentation />
     <Lista/>
   </StrictMode>,
 )
