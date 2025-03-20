@@ -1,9 +1,9 @@
 import '../style/list.css'
 
-const nombres = ["paso 1", " paso 2", "paso 3", "paso 4"];
+const nombres = ["paso 1"];
 
 
-export const Lista = ()=> {
+export const List = ()=> {
 
   return (
     <ul>
