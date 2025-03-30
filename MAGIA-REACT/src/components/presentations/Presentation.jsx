@@ -1,4 +1,4 @@
-import '../style/presentation.css'
+import './presentation.css'
 export const Presentation =()=> {
   return (
     <>
