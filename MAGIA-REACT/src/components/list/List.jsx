@@ -1,4 +1,4 @@
-import '../style/list.css'
+import './list.css'
 
 const nombres = ["paso 1"];
 
