@@ -1,13 +1,11 @@
-// Button.jsx
-import './button.css'
 
-const Button = ({ text, icon: Icon }) => {
+const Button = ({ text, icon: Icon, onClick }) => {
   return (
-    <button className="btn">
-      {Icon && <Icon />}
-      {text}
+    <button onClick={onClick} className="btn">
+      {Icon && <Icon />} {text}
     </button>
-  )
-}
+  );
+};
 
-export { Button }
+export { Button };
+
