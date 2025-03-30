@@ -1,15 +1,11 @@
 import './presentation.css'
-export const Presentation =()=> {
+const Presentation =()=> {
   return (
-    <>
+    <header>
       <h1>curso comenzado por frank</h1>
-      <div className='card'>
-        <p>
-          primeros pasos en react
-        </p>
-      </div>
-    </>
+    </header>
   )
 }
 
 
+export { Presentation}
