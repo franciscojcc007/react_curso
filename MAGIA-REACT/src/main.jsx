@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './style.css'
-import {Presentation} from './components/Presentation.jsx'
-import {List} from './components/List.jsx'
-// import { DiAtom } from 'react-icons/di'
-import {Button} from './components/Button.jsx'
+import './style/style.css'
+import {Presentation} from './components/presentations/Presentation.jsx'
+import {List} from './components/list/List.jsx'
+import {Button} from './components/button/Button.jsx'
 import { FaPlus, FaEdit, FaTrash } from 'react-icons/fa'
 import React from 'react'
+// import { DiAtom } from 'react-icons/di'
 
 
 createRoot(document.getElementById('root')).render(
@@ -21,3 +21,4 @@ createRoot(document.getElementById('root')).render(
     </React.Fragment>
   </StrictMode>,
 )
+
