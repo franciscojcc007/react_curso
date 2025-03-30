@@ -1,14 +1,16 @@
 import './list.css'
 
-const nombres = ["paso 1"];
-
-
-export const List = ()=> {
-
+const List = ({ tasks, onDeleteTask }) => {
   return (
     <ul>
-      {nombres.map((nombre, index) => 
-      (<li className="listP" key={index}>{nombre}</li>))}
+      {tasks.map((task, index) => (
+        <li key={index}>
+          {task}
+          <button onClick={() => onDeleteTask(index)}>Eliminar</button>
+        </li>
+      ))}
     </ul>
   );
-}
+};
+
+export { List };
