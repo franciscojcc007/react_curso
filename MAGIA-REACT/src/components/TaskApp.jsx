@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Form } from "./form/form.jsx";
 import { List } from "./list/List.jsx";
 import { Presentation } from './presentations/Presentation.jsx'
+import { Contador } from  "./contador/Contador.jsx"
 // import { FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 
 const TaskApp = () => {
@@ -22,12 +23,13 @@ const TaskApp = () => {
   };
 
   return (
-    <div>
+    <>
       <Presentation />
       <h1>Gestor de Tareas</h1>
       <Form value={currentTask} onChange={setCurrentTask} onAddTask={handleAddTask} />
       <List tasks={tasks} onDeleteTask={handleDeleteTask} />
-    </div>
+      <Contador value={100}/>
+    </>
   );
 };
 
