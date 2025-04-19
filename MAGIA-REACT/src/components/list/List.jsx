@@ -1,16 +1,17 @@
 import './list.css'
+import { Button } from '../button/Button';
 
-const List = ({ tasks, onDeleteTask }) => {
+export const List = ({ tasks, onDeleteTask }) => {
   return (
     <ul>
       {tasks.map((task, index) => (
         <li key={index}>
           {task}
-          <button onClick={() => onDeleteTask(index)}>Eliminar</button>
+          <Button label="Eliminar" parentMethod={() => onDeleteTask(index)} />
         </li>
       ))}
     </ul>
   );
 };
 
-export { List };
+
