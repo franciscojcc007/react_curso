@@ -1,19 +1,20 @@
-import "../button/button.css"
+
 import { useState } from "react"
+import { Button } from "../button/Button.jsx"
 
-export const Contador = ({value}) =>{
+export const Contador = () =>{
 
-  const [contador, setContador] = useState(value)
+  const [contador, setContador] = useState(0)
   
   const handleClick =()=>{
-    setContador (contador + 10)
+    setContador ((contador)=> contador + 1)
   }
 
   return(
     <section>
-      <h1>contador</h1>
+      <h2>contador</h2>
       <p>{contador}</p>
-      <button className='btn' onClick={handleClick}>suma +</button>
+      <Button label="Incrementar" parentMethod={handleClick} />
     </section>
   )
 }
