@@ -1,9 +1,9 @@
+import "../button/button.css"
 
-const Button = ({ onClick }) => {
+export const Button = ({ label, parentMethod }) => {
   return (
-    <button onClick={onClick} className="btn"></button>
+    <button onClick={parentMethod} className="btn">
+      {label}
+    </button>
   );
 };
-
-export { Button };
-
