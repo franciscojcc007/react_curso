@@ -1,19 +1,21 @@
 import './form.css'
 import '../button/button.css'
-// import { FaPlus, FaEdit, FaTrash } from 'react-icons/fa'
+import { Button } from '../button/Button';
 
-const Form = ({ value, onChange, onAddTask }) => {
+export const Form = ({ value, onChange, onAddTask }) => {
   return (
-    <div>
-      <input 
-        type="text" 
-        value={value} 
-        onChange={(e) => onChange(e.target.value)} 
-        placeholder="Escribe una tarea..."
-      />
-      <button onClick={onAddTask} className='btn' >Agregar</button>
-    </div>
+    <section>
+      <h2>Gestor de Tareas</h2>
+      <div>
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder="Escribe una tarea..."
+        />
+        <Button label="Agregar" parentMethod={onAddTask} />
+      </div>
+    </section>
   );
 };
 
-export { Form };
