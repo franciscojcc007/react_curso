@@ -1,5 +1,6 @@
 import './presentation.css'
-const Presentation =()=> {
+
+export const Presentation =()=> {
   return (
     <header>
       <h1>curso comenzado por frank</h1>
@@ -8,4 +9,3 @@ const Presentation =()=> {
 }
 
 
-export { Presentation}
